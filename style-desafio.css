@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(236, 236, 236);
+}
+
+#header {
+    background-color: white;
+    height: 9vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#div-pesquisa-icone {
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#div-icone{
+    height: 100%;
+}
+
+#div-icone > img {
+    width: 33px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#div-pesquisa {
+    background-color:#ecf3f7;
+    border: solid 1.5px rgb(221, 221, 221);
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+}
+
+#div-pesquisa > input {
+    float:left;
+    background-color:transparent;
+    font-size:15px;
+    border:none;
+    height:100%;
+    width: 50%;
+}
+
+#div-pesquisa img{
+    float:left;
+    height: 50%;
+    margin: 0px 15px 0px 8px;
+}
+
+#div-botoes {
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.div-botao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div-foto {
+    width: 25px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.div-foto > img {
+    width: 100%;
+    
+    height: 100%;
+}
+
+.div-legenda {
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(107, 107, 107)
+}
+
+.div-legenda > p {
+    text-align: center;
+}
+
+#div-foto-perfil {
+    background-image: url(../foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+    <p id="nomePessoa"></p>
+    <p id="idadePessoa"></p>
+    <p id="senhaPessoa"></p>
+
+    <input type="button" value="Adicionar novo atributo" id="btnCriarParametro" onclick="criarAtributo">
+    <div id="itensUsuarioJS"></div>
+
+    <script>
+        const pessoa = {
+            nome: "juriscleudi",
+            idade: 60,
+            senha: "asdasdasd"
+        }
+
+        function cadastro(pessoa) {
+            document.getElementById('nomePessoa').innerHTML = `Nome da pessoa: ${pessoa.nome}`;
+            document.getElementById('idadePessoa').innerHTML = `Idade da pessoa: ${pessoa.idade}`;
+            document.getElementById('senhaPessoa').innerHTML = `Senha da pessoa: ${pessoa.senha}`;
+        }
+
+        let idCampoComIdDefinido = 1;
+        function criarrAtributo() {
+            criarCampoComIdDeterminado(idCampoComIdDefinido);
+            idCampoComIdDefinido++;
+        }
+
+        function criarCampoComIdDeterminado(id, conteudo){
+            let legenda = document.createElement('label');
+            legenda.innerHTML = `Novo atributo ${id}: `;
+            let paragrafo = document.createElement('p');
+            legenda.innerHTML = `Qual será o tipo deste atributo: `;
+
+            let div_inputs_radio = document.createElement('div');
+            div_inputs_radio.id = "div_inputs";
+            for (let index = 0; index < 3; index++) {
+                let tipo_input = document.createElement('input');
+                tipo_input.name = tipo;
+                tipo_input.id = "tipos";
+                let legenda_tipo_input = document.createElement('label');
+                legenda_tipo_input.innerHTML = "";
+                document.getElementById("div_inputs").appendChild(tipo_input);
+            }
+                        
+        }
+        cadastro(pessoa);
+    </script>
+
+</body>
+</html>

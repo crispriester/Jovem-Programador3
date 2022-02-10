@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    
+    flex-direction: column;
+}
+
+.flex-direction {
+    width: 100vw;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#header {
+    height: 10vh;
+    background-color: aquamarine;
+}
+
+#main {
+    height: 80vh;
+    
+    background-image: url(https://cdn-sites-images.46graus.com/files/photos/50c3db3d/e0fce8c0-6ab1-421d-b178-c8bf202fb208/fotografia-de-casamento-em-campinas-58-768x511.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+#footer {
+    height: 10vh;
+    background-color: aqua;
+}
+
